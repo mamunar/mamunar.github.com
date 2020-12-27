@@ -32,7 +32,10 @@
     • Operating System:  Microsoft Windows 10, Ubuntu14.04,  Mac OS
     • Cloud Platfrom:  AWS
     • Version Controlling : Git , Perforce
-    • Build Tool :  Maven , Gradle, GBS
+    • Build Tool :  Maven , Gradle, 
+    
+
+    
 <br><br>
 Professional Projects
 ================================================================================================
