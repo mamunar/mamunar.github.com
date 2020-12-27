@@ -33,10 +33,10 @@
     • Cloud Platfrom:  AWS
     • Version Controlling : Git , Perforce
     • Build Tool :  Maven , Gradle, GBS
+<br><br>
+Professional Projects
+================================================================================================
 
-
-## Professional Projects
-_______________________________________________________________________________________________________________________________
 
 At Samsung R&D Institute
 --
