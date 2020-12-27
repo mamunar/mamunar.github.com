@@ -1,6 +1,7 @@
- # Shaikh Md Mamunar Rashid 
- Email : mamunarrashid@gmail.com 
- LinkedIn:https://www.linkedin.com/in/mmamunarrashid/  Github : https://github.com/mamunar 
+# Shaikh Md Mamunar Rashid
+
+Email : mamunarrashid@gmail.com  
+LinkedIn:https://www.linkedin.com/in/mmamunarrashid/  Github:https://github.com/mamunar  
                                   
 
 **To become a successful professional by facing new challenges and overcome those by using my knowledge, hard work, by learning new stuff and improving my skill. Keen to work with cutting-edge technology.**
@@ -71,7 +72,8 @@ At Samsung R&D Institute
 
 **6. Developing and Customizing of Android Service and apps for Middle -East Africa region**
 
-    Domain: Multimedia Service (DLNA/AllShare Framework, Nearby Devices, SharedVideo ,Screen Mirroring) , Video Player , MMFW & Video Call UI.
+    Domain: Multimedia Service (DLNA/AllShare Framework,Nearby Devices,SharedVideo,Screen Mirroring),
+    Video Player,MMFW & Video Call UI.
     Role : Sub TL
 
 **7. AGifMaker for Android**
