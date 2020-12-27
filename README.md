@@ -1,6 +1,5 @@
-# Shaikh Md Mamunar Rashid
-
-[Email](mailto:mamunarrashid@gmail.com)  [LinkedIn](https://www.linkedin.com/in/mmamunarrashid/)  [Github](https://github.com/mamunar) 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Shaikh Md Mamunar Rashid 
+================================================================================================================================== 
 
 **To become a successful professional by facing new challenges and overcome those by using my knowledge, hard work, by learning new stuff and improving my skill. Keen to work with cutting-edge technology.**
 
@@ -122,4 +121,6 @@ At Jaba IT
 
     Technology: C#.net (3.5), Microsoft Sql Server 2005
     Role: Programmer
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[Email](mailto:mamunarrashid@gmail.com) &nbsp; [LinkedIn](https://www.linkedin.com/in/mmamunarrashid/) &nbsp; [Github](https://github.com/mamunar)
 
