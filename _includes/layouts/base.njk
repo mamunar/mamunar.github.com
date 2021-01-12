@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125501210-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125501210-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="/css/script.js" defer="defer"></script>
+    <!-- for burger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <header>
+
+      <div class="topnav" id="myTopnav">
+        <div class="navbar-brand">
+          <div class="title">
+            <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+          </div>
+        </div>
+
+        {#- Read more about `eleventy-navigation` at https://github.com/11ty/eleventy-navigation #}
+
+        <div class="navbar-nav">
+          <div class="responsive-nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              Menu
+              <i class="fa fa-bars"></i>
+            </a>
+            {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
+        listClass: "nav",
+        listItemClass: "nav-item",
+        activeListItemClass: "nav-item-active",
+        activeKey: eleventyNavigation.key
+      }) | safe }}
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="content">
+      <main{% if templateclass %} class="{{ templateClass }}" {% endif %}>
+
+        {{ content | safe }}
+      </main>
+
+      <footer>
+        <a href="{{ '/' | url }}">Mamunar Rashid
+        <script>
+          document.write(new Date().getFullYear());
+        </script></a>
+        <div class="social-icons">
+        <a href="http://www.twitter.com/smmamunar" target="_blank"><img src="/img/407-twitter.svg" alt="Twitter";></a>
+        <a href="https://www.linkedin.com/in/mmamunarrashid/" target="_blank"><img src="/img/459-linkedin2.svg" alt="LinkedIn";></a>
+        <!-- <a href="http://www.twitter.com/smmamunar" target="_blank">Twitter</a> · 
+        <a href="https://www.linkedin.com/in/mmamunarrashid/" target="_blank">Linkedin</a></footer> -->
+        </div>
+
+    </div>
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+</html>

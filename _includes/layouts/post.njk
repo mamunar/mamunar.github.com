@@ -1,0 +1,18 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<h1>{{ title }}</h1>
+
+<div class="wrapper">
+        
+        <div></div>
+        <div>
+{% if date %}🗓 <div class="date">{{ date | readableDate }}</div>{% else %} {% endif %}
+{{ content | safe }}
+
+<p><a href="{{ '/' | url }}">← Home</a></p>
+
+</div>
+<div></div>
+</div>

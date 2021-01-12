@@ -1,128 +1,71 @@
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Shaikh Md Mamunar Rashid 
-====================================================================================================================================================
+# eleventy-base-blog
 
-**To become a successful professional by facing new challenges and overcome those by using my knowledge, hard work, by learning new stuff and improving my skill. Keen to work with cutting-edge technology.**
+A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator. TESTING. HELLO. HELLO AGAIN.
 
+[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
 
-**Work Experiences**
+## Demos
 
-**Technical Lead at Samsung R&D Institute , Bangladesh [November 2011 -- Present]**
+* [Netlify](https://eleventy-base-blog.netlify.com/)
+* [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)—seriously, just click OK a few times and it’s live—Netlify is amazing.
+* [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
 
-    • Technical Design for future application for Smartphone 
-    • Feature implementation for Android and iOS Platform 
-    • Development & Technical feasibly test for Advanced R&D projects 
-    • Work for innovative ideas which lead to company’s patent 
-    • Developing and Customizing of Android Operating System for MEA 
-    • Modules lead of Media Service team 
-    • Code review 
+## Getting Started
 
-**Software Engineer at Jaba IT(Japan Bangladesh Information Technologies) [February 2010 -- October 2011]**
+### 1. Clone this repository:
 
-    • Software Design & Implementation
-    • Module integration and development scenario
-    • Bug fixing and refactoring
-    • Unit Testing
-
-**Personal skills and competences**
-
-    • Programming Language: Java, C , C#, Swift, Python, Scala(Introduced)
-    • Database: MySql, SqlLite ,SQLServer2005/08, RealmDB
-    • Web Framework: Flask(Python), Spring Boot, Asp.net
-    • Framework/SDK: iOS,Android, StageFright, JMF, JNI, Junit, EFL, Tizen, Afroge.net.
-    • Operating System:  Microsoft Windows 10, Ubuntu14.04,  Mac OS
-    • Cloud Platfrom:  AWS
-    • Version Controlling : Git , Perforce
-    • Build Tool :  Maven , Gradle, 
-    
+```
+git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
+```
 
 
-# Professional Projects
+### 2. Navigate to the directory
 
+```
+cd my-blog-name
+```
 
+Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
 
-At Samsung R&D Institute
---
+### 3. Install dependencies
 
-**1. Samsung Health**
+```
+npm install
+```
 
-    Technology : Swift, Objective-C
-    Role : Technical Lead
-    Product URL : https://apps.apple.com/us/app/samsung-health/id1224541484
+### 4. Edit _data/metadata.json
 
-**2. S-Around App**
+### 5. Run Eleventy
 
-    Technology: Java(Spring Boot), Android.
-    Role: Development Lead.
+```
+npx eleventy
+```
 
-**3. Meeting Planner**
+Or build and host locally for local development
+```
+npx eleventy --serve
+```
 
-    Technology: Tizen & Android
-    Role : Scrum Master
+Or build automatically when a template changes:
+```
+npx eleventy --watch
+```
 
-**4. Video Bookmark**
+Or in debug mode:
+```
+DEBUG=* npx eleventy
+```
 
-    Technology : Tizen , Android/Java
-    Role : Scrum Master
+### Implementation Notes
 
-**5. Clock apps for Tizen OS**
-
-    Technology : Enlightenment Foundation Libraries (EFL), Tizen , SqLite
-    Role : Software Engineer
-
-**6. Developing and Customizing of Android Service and apps for Middle -East Africa region**
-
-    Domain: Multimedia Service (DLNA/AllShare Framework,Nearby Devices,SharedVideo,Screen Mirroring),
-    Video Player,MMFW & Video Call UI.
-    Role : Sub TL
-
-**7. AGifMaker for Android**
-
-    Technology : Android
-    Role : Analysis and development
-
-**8. Blind Navigation project**
-
-    Technology : Java
-    Role : Software Engineer
-
-At Jaba IT
---
-
-**1. ERP Solution for Real Estate**
-
-    Technology: WPF4, Microsoft Sql Server 2008, Microsoft Visio
-    Role: Software Engineer(Database Design, Technical design )
-
-**2. Fortune Telling smart phone application for Uranai System for ITA Inc. at Japan**
-
-    Technology: Android / Java
-    Role: Software Engineer
-
-**3. Write a middle-ware for broadcast SMS from Computer**
-
-    Technology: Java
-    Role: Programmer
-
-**4. Payroll System for Bangladesh Gas Field Corporation Ltd.**
-
-    Technology: C#.net (3.5), Microsoft Sql Server 2005
-    Role: Software Engineer
-
-**5. Web Based Factory Management System & ERP Solution for AHZ Agro Industries Ltd.**
-
-    Worked with HRM & SFM module.
-    Product Preview link: http://www.jabait.com/services/our_products.html
-    Technology: ASP.net (3.5), Microsoft Sql Server 2005
-    Role: Programmer
-**6. Training Center Management Software for Center for Medical Ultrasound and doppler Ltd.**
-
-    Technology: C#.net (3.5), Microsoft Sql Server 2005
-    Role: Programmer
-
-**7. Medical Diagnostic Management Solution**
-
-    Technology: C#.net (3.5), Microsoft Sql Server 2005
-    Role: Programmer
-
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [Email](mailto:mamunarrashid@gmail.com) &nbsp; [LinkedIn](https://www.linkedin.com/in/mmamunarrashid/) &nbsp; [Github](https://github.com/mamunar)
-
+* `about/index.md` shows how to add a content page.
+* `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
+* Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.njk` and `about/index.md`.
+* Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`.
+	* Because `css` and `png` are listed in `templateFormats` but are not supported template types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
+* The blog post feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
+* This example uses three layouts:
+  * `_includes/layouts/base.njk`: the top level HTML structure
+  * `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
+  * `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
+* `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.

@@ -1,0 +1,21 @@
+{
+  "name": "mmaunar-rashid-site",
+  "version": "1.0.0",
+  "description": "Mamunar Rashid Personal Site.",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "start": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy-navigation": "^0.1.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
+    "luxon": "^1.12.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.0.2"
+  }
+}

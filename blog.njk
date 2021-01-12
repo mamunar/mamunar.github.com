@@ -1,0 +1,21 @@
+---
+layout: layouts/home.njk
+permalink: /blog/
+eleventyNavigation:
+  key: Blog
+  order: 2
+---
+
+
+<h1>Blog</h1>
+{% set postslist = collections.posts | head(-6) %}
+{% include "postslist.njk" %}
+
+<p><br /><br /></p>
+<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+
+{% for tag in collections.tagList %}
+  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+{% endfor %}
+

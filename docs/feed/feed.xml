@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Shaikh Md. Mamunar Rashid</title>
+	<subtitle>Software Engineer</subtitle>
+	<link href="" rel="self"/>
+	<link href="https://mamunar.github.io/"/>
+	<updated>2021-01-12T00:00:00Z</updated>
+	<id></id>
+	<author>
+		<name>Mamunar Rashid</name>
+		<email>dev.mamunar@gmail.com</email>
+	</author>
+	
+	<entry>
+		<title>Plan of 2021</title>
+		<link href="https://mamunar.github.io/posts/Paln%202021/"/>
+		<updated>2021-01-05T00:00:00Z</updated>
+		<id>https://mamunar.github.io/posts/Paln%202021/</id>
+		<content type="html">&lt;p&gt;A few plan for  2021&lt;/p&gt;
+&lt;h2 id=&quot;physical-and-mental-wellness&quot;&gt;Physical and mental Wellness &lt;a class=&quot;direct-link&quot; href=&quot;https://mamunar.github.io/posts/Paln%202021/#physical-and-mental-wellness&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Maintain Healthy food&lt;/li&gt;
+&lt;li&gt;Daily Meditation for 7 minutes&lt;/li&gt;
+&lt;li&gt;Daily physical exercise for 10 minutes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;writting&quot;&gt;Writting &lt;a class=&quot;direct-link&quot; href=&quot;https://mamunar.github.io/posts/Paln%202021/#writting&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Stream of conciousness&lt;/li&gt;
+&lt;li&gt;5 minutes journal&lt;/li&gt;
+&lt;li&gt;Trchnical blog&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;reading-habit&quot;&gt;Reading Habit &lt;a class=&quot;direct-link&quot; href=&quot;https://mamunar.github.io/posts/Paln%202021/#reading-habit&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Monthly reading challenge&lt;/li&gt;
+&lt;li&gt;Key note of every reading&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Application architecture of Microservice</title>
+		<link href="https://mamunar.github.io/posts/Application%20architecture%20of%20Microservice/"/>
+		<updated>2021-01-09T00:00:00Z</updated>
+		<id>https://mamunar.github.io/posts/Application%20architecture%20of%20Microservice/</id>
+		<content type="html">&lt;p&gt;MICROSERVICES is a service-oriented architecture pattern wherein applications are built as a collection of various smallest independent service units. It is a software engineering approach that focuses on decomposing an application into single-function modules with well-defined interfaces.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Android Activity Lifecycle</title>
+		<link href="https://mamunar.github.io/posts/Android%20Activity%20Lifecycle/"/>
+		<updated>2021-01-12T00:00:00Z</updated>
+		<id>https://mamunar.github.io/posts/Android%20Activity%20Lifecycle/</id>
+		<content type="html">&lt;p&gt;When an activity is first launched ,its created and then started and then resumed.Now the activity is active and the user can interact with it but as soon as the user moves to a different activity or a different application,then this activity moves into a paused state and then to a stop state and it it is close out,then it becomes destroyed.If the user comes back to this activity then it gets started and we move back into the start state and now the user can interact with it once again.This is just a simplified activity diagram and explanation to let you understand whats going on under .Now lets dive into the bigger picture.&lt;/p&gt;
+&lt;p&gt;Each activity state is associate with some states and an android system is responsible for transitioning your activity into each of these states where as we as a developer can’t control which state we are in&lt;/p&gt;
+&lt;p&gt;When our activity is first launched,the activity is moved into a create state using the onCreate method and then its moved into the start state using the onStart method and at this point,it becomes visible to the user.&lt;/p&gt;
+&lt;p&gt;Then its moved into the resume state via the onResume method and in this state,the activity is still visible to the user but the user can now start interacting with the activity .so here we can display animations,use sensors like location sensors or even use a camera on the &lt;a href=&quot;http://device.so/&quot;&gt;device.So&lt;/a&gt; the activity can stay in this resume state for however long the user is looking at the screen rather for 1 hour or 10 hours.&lt;/p&gt;
+&lt;p&gt;Now as soon as the user switches to a different activity ,then activity is paused via the onPause method and from there it moves into a stop state via the onStop &lt;a href=&quot;http://method.so/&quot;&gt;method.So&lt;/a&gt; at this point,the activity is no longer visible to the user. Now if the system determines that your activity is no longer needed,the system may destroy your activity via the onDestroy method in order to free up resources on the device and then our activity would enter the destroy state.But otherwise,the activity could stay in the stop state.&lt;/p&gt;
+&lt;p&gt;Then if the user decides to come back to the activity before it’s destroyed,then the activity is restarted via the onRestart method and it moves back into the start state via the onStart method.&lt;/p&gt;
+</content>
+	</entry>
+</feed>

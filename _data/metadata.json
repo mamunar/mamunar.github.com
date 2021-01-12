@@ -1,0 +1,16 @@
+{
+  "title": "Shaikh Md. Mamunar Rashid",
+  "url": "https://mamunar.github.io/",
+  "description": "Software Engineer",
+  "feed": {
+    "subtitle": "Software Engineer",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "",
+    "id": ""
+  },
+  "author": {
+    "name": "Mamunar Rashid",
+    "email": "dev.mamunar@gmail.com"
+  }
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125501210-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125501210-1');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android Activity Lifecycle</title>
+    <meta name="Description" content="Details of Android Activity life cycle, Backstack">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Shaikh Md. Mamunar Rashid">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <script src="/css/script.js" defer="defer"></script>
+    <!-- for burger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  </head>
+  <body>
+    <header>
+
+      <div class="topnav" id="myTopnav">
+        <div class="navbar-brand">
+          <div class="title">
+            <a href="/">Shaikh Md. Mamunar Rashid</a>
+          </div>
+        </div>
+
+        <div class="navbar-nav">
+          <div class="responsive-nav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              Menu
+              <i class="fa fa-bars"></i>
+            </a>
+            <ul class="nav"><li class="nav-item"><a href="/">Home</a></li>
+<li class="nav-item"><a href="/blog/">Blog</a></li>
+<li class="nav-item"><a href="/resume/">Resume</a></li>
+<li class="nav-item"><a href="/contact/">Contact</a></li></ul>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="content">
+      <main>
+
+        <h1>Android Activity Lifecycle</h1>
+
+<div class="wrapper">
+        
+        <div></div>
+        <div>
+🗓 <div class="date">12 Jan 2021</div>
+<p>When an activity is first launched ,its created and then started and then resumed.Now the activity is active and the user can interact with it but as soon as the user moves to a different activity or a different application,then this activity moves into a paused state and then to a stop state and it it is close out,then it becomes destroyed.If the user comes back to this activity then it gets started and we move back into the start state and now the user can interact with it once again.This is just a simplified activity diagram and explanation to let you understand whats going on under .Now lets dive into the bigger picture.</p>
+<p>Each activity state is associate with some states and an android system is responsible for transitioning your activity into each of these states where as we as a developer can’t control which state we are in</p>
+<p>When our activity is first launched,the activity is moved into a create state using the onCreate method and then its moved into the start state using the onStart method and at this point,it becomes visible to the user.</p>
+<p>Then its moved into the resume state via the onResume method and in this state,the activity is still visible to the user but the user can now start interacting with the activity .so here we can display animations,use sensors like location sensors or even use a camera on the <a href="http://device.So">device.So</a> the activity can stay in this resume state for however long the user is looking at the screen rather for 1 hour or 10 hours.</p>
+<p>Now as soon as the user switches to a different activity ,then activity is paused via the onPause method and from there it moves into a stop state via the onStop <a href="http://method.So">method.So</a> at this point,the activity is no longer visible to the user. Now if the system determines that your activity is no longer needed,the system may destroy your activity via the onDestroy method in order to free up resources on the device and then our activity would enter the destroy state.But otherwise,the activity could stay in the stop state.</p>
+<p>Then if the user decides to come back to the activity before it’s destroyed,then the activity is restarted via the onRestart method and it moves back into the start state via the onStart method.</p>
+
+
+<p><a href="/">← Home</a></p>
+
+</div>
+<div></div>
+</div>
+      </main>
+
+      <footer>
+        <a href="/">Mamunar Rashid
+        <script>
+          document.write(new Date().getFullYear());
+        </script></a>
+        <div class="social-icons">
+        <a href="http://www.twitter.com/smmamunar" target="_blank"><img src="/img/407-twitter.svg" alt="Twitter";></a>
+        <a href="https://www.linkedin.com/in/mmamunarrashid/" target="_blank"><img src="/img/459-linkedin2.svg" alt="LinkedIn";></a>
+        <!-- <a href="http://www.twitter.com/smmamunar" target="_blank">Twitter</a> · 
+        <a href="https://www.linkedin.com/in/mmamunarrashid/" target="_blank">Linkedin</a></footer> -->
+        </div>
+
+    </div>
+    <!-- Current page: /posts/Android Activity Lifecycle/ -->
+  </body>
+</html>
